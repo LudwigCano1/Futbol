@@ -25,11 +25,11 @@ class Equipo():
         eq1.PJ += 1
         eq2.PJ += 1
 
-        if temp1 > temp2:
+        if g1 > g2:
             eq1.Pts += 3
             eq1.PG += 1
             eq2.PP += 1
-        elif temp1 < temp2:
+        elif g1 < g2:
             eq2.Pts += 3
             eq2.PG += 1
             eq1.PP += 1
@@ -131,4 +131,3 @@ with P3:
     for i in range(n):
         Resultados.loc[i]=[lista_t[i].nombre,lista_t[i].PJ,lista_t[i].PG,lista_t[i].PE,lista_t[i].PP,int(lista_t[i].GF),int(lista_t[i].GC),int(lista_t[i].DG),lista_t[i].Pts]
     Resultados
-
