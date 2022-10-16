@@ -74,9 +74,8 @@ with P2:
             fechas[int(vt_f-1)].append((i,j))
 
     lab_temp = " "
-
+    st.write("**Activar el checkbox cuando ya se haya jugado el partido**")
     for i in range(vt):
-        st.write("**Activar el checkbox cuando ya se haya jugado el partido**")
         st.subheader(f"\nFecha #{i+1}:")
         for x in fechas[i]:
             cc6,cc1,cc2,cc3,cc4,cc5,cc7 = st.columns([1,2,2,1,2,2,1])
